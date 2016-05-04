@@ -47,7 +47,8 @@ public class CrimeListFragment extends ListFragment {
         //getListAdapter(ListAdapter)是ListFragment类的便利方法，该方法可返回
         //设置在ListFragment列表视图上的Adapter.
 
-        Intent i = new Intent(getActivity(), CrimeActivity.class);
+//        Intent i = new Intent(getActivity(), CrimeActivity.class);
+        Intent i = new Intent(getActivity(),CrimePagerActivity.class);
         i.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getmId());
 
         startActivity(i);
